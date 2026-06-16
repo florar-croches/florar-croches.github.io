@@ -1,0 +1,767 @@
+/* =============================================
+   FLORAR CROCHÉS — style.css
+   Mobile-first, single-page landing
+   ============================================= */
+
+/* ---- FONTES CUSTOMIZADAS ----
+   Selima e Playlist Script são fontes gratuitas para uso comercial,
+   mas não estão no Google Fonts.
+
+   Selima  → BAIXADA do dafont.com/selima.font e ativa abaixo (arquivo real
+             em assets/fonts/Selima.ttf). É a fonte de marca dos títulos grandes.
+
+   Playlist Script (autor Artimasa) → NÃO encontrada em fonte legítima de
+             download gratuito (saiu do dafont; o que resta são homônimos de
+             outros autores). Mantida como fallback 'Caveat' (Google Fonts).
+             Quando obtiver o arquivo oficial, salve em
+             assets/fonts/PlaylistScript.ttf, descomente o @font-face abaixo e
+             troque o fallback de --font-script. */
+
+@font-face {
+  font-family: 'Selima';
+  src: url('assets/fonts/Selima.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* PENDENTE — descomentar quando o arquivo oficial do Playlist Script existir:
+@font-face {
+  font-family: 'Playlist Script';
+  src: url('assets/fonts/PlaylistScript.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+
+/* --font-display → 'Selima' (real). 'Playfair Display' fica só como fallback.   */
+/* --font-script  → 'Caveat' (fallback de Playlist Script, ainda não obtido).    */
+
+/* ---- DESIGN TOKENS ---- */
+:root {
+  --gray-bg: #BFC2C1;
+  --gray-banner: #6F7177;
+  --brown-brand: #805E42;
+  --white: #FFFFFF;
+  --accent-lavanda: #C6A6C3;
+  --accent-coral: #E29694;
+  --accent-teal: #1FD5CD;
+
+  --font-display: 'Selima', 'Playfair Display', Georgia, serif; /* Selima real + fallback */
+  --font-script:  'Caveat', cursive;                            /* fallback de Playlist Script (pendente) */
+  --font-heading: 'League Spartan', sans-serif;
+  --font-body:    'Roboto', sans-serif;
+
+  --radius-card:   16px;
+  --radius-banner: 6px;
+
+  --shadow-card: 0 2px 16px rgba(0,0,0,0.10);
+  --transition: 0.2s ease;
+}
+
+/* ---- RESET & BASE ---- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  color: #2a2a2a;
+  background: var(--white);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+img { display: block; max-width: 100%; height: auto; }
+
+a { color: inherit; text-decoration: none; }
+
+ul { list-style: none; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ---- BOTÕES ---- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: var(--radius-banner);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: opacity var(--transition), transform var(--transition);
+  border: none;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.btn:hover { opacity: 0.88; transform: translateY(-1px); }
+.btn:active { transform: translateY(0); }
+
+.btn--primary {
+  background: var(--white);
+  color: var(--brown-brand);
+}
+
+.btn--wpp {
+  background: #25D366;
+  color: var(--white);
+}
+
+.btn--wpp-light {
+  background: var(--white);
+  color: var(--brown-brand);
+}
+
+.btn--wpp-light .wpp-icon { fill: #25D366; }
+
+.btn--large { padding: 14px 28px; font-size: 1rem; }
+
+.btn--header { font-size: 0.85rem; padding: 10px 18px; }
+
+.btn--card {
+  width: 100%;
+  justify-content: center;
+  font-size: 0.88rem;
+  padding: 11px 16px;
+}
+
+.btn--footer {
+  margin-top: 12px;
+}
+
+.wpp-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--white);
+  flex-shrink: 0;
+}
+
+/* ---- TÍTULOS DE SEÇÃO ---- */
+.section-title {
+  font-family: var(--font-display);
+  font-style: normal; /* Selima é script regular; sem itálico sintético */
+  font-weight: 400;
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--brown-brand);
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.2;
+}
+
+.section-title--left { text-align: left; }
+
+/* =============================================
+   HEADER
+   ============================================= */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--white);
+  box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+}
+
+/* Barra superior */
+.top-bar {
+  background: var(--brown-brand);
+  color: var(--white);
+  font-size: 0.78rem;
+  font-family: var(--font-body);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 20px;
+  gap: 12px;
+}
+
+.top-bar a { color: var(--white); transition: opacity var(--transition); }
+.top-bar a:hover { opacity: 0.8; }
+.top-bar__tagline { display: none; }
+
+@media (min-width: 600px) {
+  .top-bar__tagline { display: block; }
+}
+
+/* Header main */
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  gap: 16px;
+}
+
+.logo-link { flex-shrink: 0; }
+
+.logo {
+  height: 96px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Nav desktop */
+.main-nav { display: none; }
+
+.main-nav ul {
+  display: flex;
+  gap: 28px;
+}
+
+.main-nav a {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: var(--brown-brand);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  transition: color var(--transition);
+}
+
+.main-nav a:hover { color: var(--gray-banner); }
+
+/* Hambúrguer */
+.nav-toggle {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  flex-shrink: 0;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--brown-brand);
+  border-radius: 2px;
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+.nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+.nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Menu mobile expandido */
+.main-nav.nav--open {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: var(--white);
+  border-top: 1px solid #eee;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  padding: 16px 20px 20px;
+}
+
+.main-nav.nav--open ul {
+  flex-direction: column;
+  gap: 0;
+}
+
+.main-nav.nav--open a {
+  display: block;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+  font-size: 0.92rem;
+}
+
+@media (min-width: 900px) {
+  .main-nav { display: flex; }
+  .nav-toggle { display: none; }
+  .header-main { padding: 16px 40px; }
+  .logo { height: 140px; }
+}
+
+/* =============================================
+   HERO
+   ============================================= */
+.hero {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: scale(1.04);
+}
+
+.hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, rgba(128,94,66,0.55) 0%, rgba(0,0,0,0.35) 100%);
+}
+
+.hero__content {
+  position: relative;
+  z-index: 1;
+  padding: 40px 24px;
+  max-width: 700px;
+}
+
+.hero__title {
+  font-family: var(--font-display);
+  font-style: normal; /* Selima é script regular; sem itálico sintético */
+  font-weight: 400;
+  font-size: clamp(3rem, 10vw, 5.5rem);
+  color: var(--white);
+  line-height: 1.1;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.3);
+}
+
+.hero__subtitle {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  color: rgba(255,255,255,0.92);
+  margin-bottom: 36px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+}
+
+.hero__scroll {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255,255,255,0.7);
+  animation: bounce 2s ease-in-out infinite;
+}
+
+.hero__scroll svg {
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(6px); }
+}
+
+/* =============================================
+   COLEÇÃO
+   ============================================= */
+.colecao {
+  background: var(--white);
+  padding: 72px 0 80px;
+}
+
+/* Filtros */
+.filtros {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 48px;
+}
+
+.filtro-btn {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 9px 22px;
+  border-radius: 40px;
+  border: 2px solid var(--gray-banner);
+  background: transparent;
+  color: var(--gray-banner);
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+}
+
+.filtro-btn:hover,
+.filtro-btn--active {
+  background: var(--brown-brand);
+  border-color: var(--brown-brand);
+  color: var(--white);
+}
+
+/* Grid */
+.produto-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+}
+
+@media (min-width: 600px) {
+  .produto-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 960px) {
+  .produto-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Card */
+.produto-card {
+  background: var(--white);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow var(--transition), transform var(--transition);
+}
+
+.produto-card:hover {
+  box-shadow: 0 6px 28px rgba(0,0,0,0.15);
+  transform: translateY(-3px);
+}
+
+.produto-card--hidden { display: none; }
+
+.produto-card__img-wrap {
+  aspect-ratio: 4/5;
+  overflow: hidden;
+  background: var(--gray-bg);
+}
+
+.produto-card__img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.produto-card:hover .produto-card__img-wrap img {
+  transform: scale(1.04);
+}
+
+.produto-card__info {
+  padding: 18px 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.produto-card__tag {
+  display: inline-block;
+  background: var(--gray-banner);
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: var(--radius-banner);
+  align-self: flex-start;
+}
+
+.produto-card__nome {
+  font-family: var(--font-script);
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--brown-brand);
+  line-height: 1.2;
+}
+
+.produto-card__preco {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: #2a2a2a;
+  margin-top: 2px;
+}
+
+.produto-card__info .btn--card { margin-top: auto; padding-top: 12px; }
+
+/* =============================================
+   PERSONALIZAÇÃO
+   ============================================= */
+.personalizacao {
+  background: var(--gray-bg);
+  padding: 72px 0;
+}
+
+.personalizacao__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.personalizacao__texto p {
+  font-size: 1.05rem;
+  color: #3a3a3a;
+  max-width: 560px;
+  margin-bottom: 28px;
+  line-height: 1.7;
+}
+
+.personalizacao__visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  align-self: center;
+}
+
+.personalizacao__cores {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.personalizacao__cores span {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: block;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.personalizacao__legenda {
+  font-family: var(--font-script);
+  font-size: 1.1rem;
+  color: var(--brown-brand);
+}
+
+@media (min-width: 780px) {
+  .personalizacao__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .personalizacao__visual { align-self: auto; }
+}
+
+/* =============================================
+   CALCULADORA PRECIFICACROCHÊ
+   ============================================= */
+.calculadora {
+  background: var(--brown-brand);
+  color: var(--white);
+  padding: 72px 0;
+  position: relative;
+}
+
+.calculadora__badge {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent-teal);
+  color: #1a1a1a;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 0.78rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  padding: 5px 18px;
+  border-radius: 40px;
+  white-space: nowrap;
+}
+
+.calculadora__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.calculadora__titulo {
+  font-family: var(--font-display);
+  font-style: normal; /* Selima é script regular; sem itálico sintético */
+  font-weight: 400;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  color: var(--white);
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.calculadora__subtitulo {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 16px;
+}
+
+.calculadora__texto p {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.88);
+  max-width: 560px;
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+.calculadora__texto strong { color: var(--white); }
+
+.calculadora__ctas {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.calculadora__link-info {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.7);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color var(--transition);
+}
+
+.calculadora__link-info:hover { color: var(--white); }
+
+.calculadora__icone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  align-self: center;
+}
+
+.calculadora__icone svg {
+  width: 80px;
+  height: 80px;
+}
+
+.calculadora__icone p {
+  font-family: var(--font-script);
+  font-size: 1.2rem;
+  color: rgba(255,255,255,0.9);
+  text-align: center;
+  line-height: 1.4;
+}
+
+@media (min-width: 780px) {
+  .calculadora__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .calculadora__icone { align-self: auto; }
+}
+
+/* =============================================
+   FOOTER
+   ============================================= */
+.site-footer {
+  background: var(--brown-brand);
+  color: var(--white);
+  padding: 48px 0 24px;
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.footer__logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.footer__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer__insta,
+.footer__tel {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.88);
+  transition: color var(--transition);
+}
+
+.footer__insta:hover,
+.footer__tel:hover { color: var(--white); }
+
+.footer__copy {
+  text-align: center;
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.55);
+  border-top: 1px solid rgba(255,255,255,0.15);
+  padding-top: 20px;
+}
+
+@media (min-width: 780px) {
+  .footer__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .footer__info { align-items: flex-start; }
+}
+
+/* =============================================
+   BOTÃO FLUTUANTE WHATSAPP
+   ============================================= */
+.wpp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 20px;
+  z-index: 200;
+  width: 56px;
+  height: 56px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.wpp-float:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.30);
+}
+
+.wpp-float svg {
+  width: 30px;
+  height: 30px;
+  fill: var(--white);
+}
+
+/* Ocultar botão flutuante em desktop grande (o header já tem o CTA) */
+@media (min-width: 900px) {
+  .wpp-float { display: none; }
+}
