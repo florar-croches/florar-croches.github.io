@@ -47,7 +47,8 @@
 
   document.querySelectorAll('.card__art').forEach(function (botao) {
     botao.addEventListener('click', function () {
-      abrir(botao.dataset.full, botao.dataset.alt);
+      var img = botao.querySelector('img');
+      abrir(img.currentSrc || img.src, img.alt);
     });
   });
 
