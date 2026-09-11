@@ -1,0 +1,24 @@
+{
+  "name": "florar-croches",
+  "version": "1.0.0",
+  "description": "Landing page estática (HTML + CSS + JS vanilla, sem build) da **Florar Crochés** — bolsas de crochê feitas à mão, em Braga (Portugal). A conversão acontece pelo WhatsApp.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/florar-croches/florar-croches.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/florar-croches/florar-croches.github.io/issues"
+  },
+  "homepage": "https://florar-croches.github.io",
+  "dependencies": {
+    "motion": "^12.41.0"
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "Luar": [
+    {
+      "modelo": "Luar Areia",
+      "slug": "luar-areia",
+      "preco_eur": 38,
+      "arquivo": "assets/cards/luar-areia.jpg"
+    },
+    {
+      "modelo": "Luar Latte",
+      "slug": "luar-latte",
+      "preco_eur": 38,
+      "arquivo": "assets/cards/luar-latte.jpg"
+    },
+    {
+      "modelo": "Luar Grafite",
+      "slug": "luar-grafite",
+      "preco_eur": 38,
+      "arquivo": "assets/cards/luar-grafite.jpg"
+    },
+    {
+      "modelo": "Luar Prisma",
+      "slug": "luar-prisma",
+      "preco_eur": 40,
+      "arquivo": "assets/cards/luar-prisma.jpg"
+    },
+    {
+      "modelo": "Luar Tricolor",
+      "slug": "luar-tricolor",
+      "preco_eur": 40,
+      "arquivo": "assets/cards/luar-tricolor.jpg"
+    }
+  ],
+  "Jade": [
+    {
+      "modelo": "Jade Clássica",
+      "slug": "jade-classica",
+      "preco_eur": 43,
+      "arquivo": "assets/cards/jade-classica.jpg"
+    },
+    {
+      "modelo": "Jade Gold",
+      "slug": "jade-gold",
+      "preco_eur": 53,
+      "arquivo": "assets/cards/jade-gold.jpg"
+    }
+  ],
+  "Delicatta": [
+    {
+      "modelo": "Delicatta Clássica",
+      "slug": "delicatta-classica",
+      "preco_eur": 45,
+      "arquivo": "assets/cards/delicatta-classica.jpg"
+    },
+    {
+      "modelo": "Delicatta Elegance",
+      "slug": "delicatta-elegance",
+      "preco_eur": 48,
+      "arquivo": "assets/cards/delicatta-elegance.jpg"
+    }
+  ],
+  "Siena": [
+    {
+      "modelo": "Siena Terrosa",
+      "slug": "siena-terrosa",
+      "preco_eur": 40,
+      "arquivo": "assets/cards/siena-terrosa.jpg"
+    }
+  ],
+  "Aurora": [
+    {
+      "modelo": "Aurora Off-White",
+      "slug": "aurora-off-white",
+      "preco_eur": 40,
+      "arquivo": "assets/cards/aurora-off-white.jpg"
+    },
+    {
+      "modelo": "Aurora Noir",
+      "slug": "aurora-noir",
+      "preco_eur": 40,
+      "arquivo": "assets/cards/aurora-noir.jpg"
+    },
+    {
+      "modelo": "Aurora Bicolor",
+      "slug": "aurora-bicolor",
+      "preco_eur": 40,
+      "arquivo": "assets/cards/aurora-bicolor.jpg"
+    }
+  ],
+  "Eclipse": [
+    {
+      "modelo": "Eclipse",
+      "slug": "eclipse",
+      "preco_eur": 43,
+      "arquivo": "assets/cards/eclipse.jpg"
+    }
+  ],
+  "Ravena": [
+    {
+      "modelo": "Ravena Noir",
+      "slug": "ravena-noir",
+      "preco_eur": 48,
+      "arquivo": "assets/cards/ravena-noir.jpg"
+    },
+    {
+      "modelo": "Ravena Brown",
+      "slug": "ravena-brown",
+      "preco_eur": 48,
+      "arquivo": "assets/cards/ravena-brown.jpg"
+    }
+  ],
+  "Serena": [
+    {
+      "modelo": "Serena Bege",
+      "slug": "serena-bege",
+      "preco_eur": 38,
+      "arquivo": "assets/cards/serena-bege.jpg"
+    },
+    {
+      "modelo": "Serena Marrom",
+      "slug": "serena-marrom",
+      "preco_eur": 38,
+      "arquivo": "assets/cards/serena-marrom.jpg"
+    },
+    {
+      "modelo": "Serena Cinza",
+      "slug": "serena-cinza",
+      "preco_eur": 38,
+      "arquivo": "assets/cards/serena-cinza.jpg"
+    },
+    {
+      "modelo": "Serena Lilás",
+      "slug": "serena-lilas",
+      "preco_eur": 38,
+      "arquivo": "assets/cards/serena-lilas.jpg"
+    }
+  ],
+  "Melina": [
+    {
+      "modelo": "Melina",
+      "slug": "melina",
+      "preco_eur": 35,
+      "arquivo": "assets/cards/melina.jpg"
+    }
+  ],
+  "Valentina": [
+    {
+      "modelo": "Valentina Rosé",
+      "slug": "valentina-rose",
+      "preco_eur": 45,
+      "arquivo": "assets/cards/valentina-rose.jpg"
+    }
+  ]
+}

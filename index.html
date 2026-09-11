@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Florar Crochés — bolsas de crochê únicas, feitas à mão e personalizáveis, em Braga. Conheça as coleções e encomende pelo WhatsApp." />
+  <title>Florar Crochés | Bolsas Únicas, Feitas à Mão</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Google tag (gtag.js) — substituir AW-SEU_ID_AQUI pelo ID real do Google Ads -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-SEU_ID_AQUI"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-SEU_ID_AQUI'); /* PLACEHOLDER — substituir pelo ID Google Ads real */
+  </script>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Estado inicial das animações (Motion): adiciona .anim antes de pintar,
+       exceto se o utilizador preferir menos movimento. -->
+  <script>
+    try {
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        document.documentElement.classList.add('anim');
+      }
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="inicio">
+    <div class="top-bar">
+      <span class="top-bar__slogan">Feito à mão, com alma e propósito</span>
+      <span class="top-bar__contato">
+        <a href="https://www.instagram.com/florarcroches" target="_blank" rel="noopener">@florarcroches</a>
+        <a href="tel:+351912703380">+351 912 703 380</a>
+      </span>
+    </div>
+    <div class="header-main container">
+      <nav class="main-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#colecoes">Coleções</a></li>
+          <li><a href="#personalizacao">Personalização</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <a href="#inicio" class="logo-link" aria-label="Florar Crochés — início">
+        <img src="assets/logo/florar-logo-oficial.jpg" alt="Florar Crochés" class="logo" />
+      </a>
+      <a href="https://wa.me/351912703380" class="btn btn--wpp header-cta" target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Falar no WhatsApp</a>
+      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <img class="hero__img" src="assets/banner/hero-banner.jpg" alt="Bolsa de crochê Florar Crochés feita à mão, segurada por uma mulher" width="1152" height="648" fetchpriority="high" />
+    <div class="hero__scrim" aria-hidden="true"></div>
+    <div class="hero__conteudo container">
+      <div class="hero__texto">
+      <span class="hero__badge"><span class="dot"></span>Feito à mão · Braga, Portugal</span>
+      <h1 class="hero__titulo">Bolsas únicas,<br>feitas à mão.</h1>
+      <p class="hero__sub">Cada peça é feita à mão e personalizável nas suas cores e detalhes.</p>
+      <div class="hero__ctas">
+        <a href="#colecoes" class="btn btn--dourado btn--lg">Ver coleções</a>
+        <a href="https://wa.me/351912703380?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20as%20bolsas." class="btn btn--wpp btn--lg" target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Pedir no WhatsApp</a>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAIXA DE CONFIANÇA ===== -->
+  <section class="trust" aria-label="Diferenciais da Florar Crochés">
+    <div class="container trust__inner">
+      <div class="trust__item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z" stroke-linejoin="round"/></svg>
+        <b>Feito à mão</b><span>Ponto a ponto, com cuidado</span>
+      </div>
+      <div class="trust__item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l2.2 5.8L20 11l-5.8 2.2L12 19l-2.2-5.8L4 11l5.8-2.2z" stroke-linejoin="round"/></svg>
+        <b>Peças únicas</b><span>Nenhuma igual à outra</span>
+      </div>
+      <div class="trust__item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="7.5" cy="9" r="2.3"/><circle cx="14.5" cy="6.8" r="2.3"/><circle cx="17.2" cy="13.5" r="2.3"/><circle cx="9.5" cy="15.5" r="2.3"/></svg>
+        <b>Personalizável</b><span>As suas cores e detalhes</span>
+      </div>
+      <div class="trust__item">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.5 8.5 8.5 0 0 1-3.8-.9L3 21l1.9-5.7A8.5 8.5 0 0 1 4 11.5 8.4 8.4 0 0 1 12.5 3 8.5 8.5 0 0 1 21 11.5z" stroke-linejoin="round"/></svg>
+        <b>Atendimento próximo</b><span>Encomende pelo WhatsApp</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COLEÇÕES ===== -->
+  <section class="colecoes" id="colecoes">
+    <div class="container">
+      <span class="eyebrow">Bolsas artesanais</span>
+      <h2 class="section-titulo section-titulo--orn">Conheça as coleções</h2>
+      <p class="section-sub">Toque numa arte para ver os detalhes. Cada bolsa é personalizável — fale connosco no WhatsApp.</p>
+      <div class="filtros" role="group" aria-label="Filtrar por coleção">
+          <button type="button" class="filtro-btn ativo" data-filtro="todas">Todas</button>
+          <button type="button" class="filtro-btn" data-filtro="Luar">Luar</button>
+          <button type="button" class="filtro-btn" data-filtro="Jade">Jade</button>
+          <button type="button" class="filtro-btn" data-filtro="Delicatta">Delicatta</button>
+          <button type="button" class="filtro-btn" data-filtro="Siena">Siena</button>
+          <button type="button" class="filtro-btn" data-filtro="Aurora">Aurora</button>
+          <button type="button" class="filtro-btn" data-filtro="Eclipse">Eclipse</button>
+          <button type="button" class="filtro-btn" data-filtro="Ravena">Ravena</button>
+          <button type="button" class="filtro-btn" data-filtro="Serena">Serena</button>
+          <button type="button" class="filtro-btn" data-filtro="Melina">Melina</button>
+          <button type="button" class="filtro-btn" data-filtro="Valentina">Valentina</button>
+      </div>
+
+      <section class="colecao-bloco" data-colecao="Luar">
+        <h3 class="colecao-bloco__titulo">Luar</h3>
+        <div class="grid">
+        <article class="card" data-colecao="Luar">
+          <button type="button" class="card__art" aria-label="Ampliar a arte da bolsa Luar Areia">
+            <img src="assets/cards/luar-areia.jpg" alt="Bolsa Luar Areia — Coleção Luar, arte artesanal com detalhes e preço" loading="lazy" />
+          </button>
+          <div class="card__info">
+            <h4 class="card__nome">Luar Areia</h4>
+            <p class="card__preco">€38 <span>+ portes</span></p>
+            <a class="btn btn--wpp btn--bloco" href="https://wa.me/351912703380?text=Ol%C3%A1!%20Tenho%20interesse%20na%20bolsa%20Luar%20Areia" target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Encomendar no WhatsApp</a>
+          </div>
+        </article>
+        <article class="card" data-colecao="Luar">
+          <button type="button" class="card__art" aria-label="Ampliar a arte da bolsa Luar Latte">
+            <img src="assets/cards/luar-latte.jpg" alt="Bolsa Luar Latte — Coleção Luar, arte artesanal com detalhes e preço" loading="lazy" />
+          </button>
+          <div class="card__info">
+            <h4 class="card__nome">Luar Latte</h4>
+            <p class="card__preco">€38 <span>+ portes</span></p>
+            <a class="btn btn--wpp btn--bloco" href="https://wa.me/351912703380?text=Ol%C3%A1!%20Tenho%20interesse%20na%20bolsa%20Luar%20Latte" target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Encomendar no WhatsApp</a>
+          </div>
+        </article>
+        <article class="card" data-colecao="Luar">
+          <button type="button" class="card__art" aria-label="Ampliar a arte da bolsa Luar Grafite">
+            <img src="assets/cards/luar-grafite.jpg" alt="Bolsa Luar Grafite — Coleção Luar, arte artesanal com detalhes e preço" loading="lazy" />
+          </button>
+          <div class="card__info">
+            <h4 class="card__nome">Luar Grafite</h4>
+            <p class="card__preco">€38 <span>+ portes</span></p>
+            <a class="btn btn--wpp btn--bloco" href="https://wa.me/351912703380?text=Ol%C3%A1!%20Tenho%20interesse%20na%20bolsa%20Luar%20Grafite" target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Encomendar no WhatsApp</a>
+          </div>
+        </article>
+        <article class="card" data-colecao="Luar">
+          <button type="button" class="card__art" aria-label="Ampliar a arte da bolsa Luar Prisma">
+            <img src="assets/cards/luar-prisma.jpg" alt="Bolsa Luar Prisma — Coleção Luar, arte artesanal com detalhes e preço" loading="lazy" />
+          </button>
+          <div class="card__info">
+            <h4 class="card__nome">Luar Prisma</h4>
+            <p class="card__preco">€40 <span>+ portes</span></p>
+            <a class="btn btn--wpp btn--bloco" href="https://wa.me/351912703380?text=Ol%C3%A1!%20Tenho%20interesse%20na%20bolsa%20Luar%20Prisma" target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Encomendar no WhatsApp</a>
+          </div>
+        </article>
+        <article class="card" data-colecao="Luar">
+          <button type="button" class="card__art" aria-label="Ampliar a arte da bolsa Luar Tricolor">
+            <img src="assets/cards/luar-tricolor.jpg" alt="Bolsa Luar Tricolor — Coleção Luar, arte artesanal com detalhes e preço" loading="lazy" />
+          </button>
+          <div class="card__info">
+            <h4 class="card__nome">Luar Tricolor</h4>
+            <p class="card__preco">€40 <span>+ portes</span></p>
+            <a class="btn btn--wpp btn--bloco" href="https://wa.me/351912703380?text=Ol%C3%A1!%20Tenho%20interesse%20na%20bolsa%20Luar%20Tricolor" target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Encomendar no WhatsApp</a>
+          </div>
+        </article>
+        </div>
+      </section>
+      <section class="colecao-bloco" data-colecao="Jade">
+        <h3 class="colecao-bloco__titulo">Jade</h3>
+        <div class="grid">
+        <article class="card" data-colecao="Jade">
+          <button type="button" class="card__art" aria-label="Ampliar a arte da bolsa Jade Clássica">
+            <img src="assets/cards/jade-classica.jpg" alt="Bolsa Jade Clássica — Coleção Jade, arte artesanal com detalhes e preço" loading="lazy" />
+          </button>
+          <div class="card__info">
+            <h4 class="card__nome">Jade Clássica</h4>
+            <p class="card__preco">€43 <span>+ portes</span></p>
+            <a class="btn btn--wpp btn--bloco" href="https://wa.me/351912703380?text=Ol%C3%A1!%20Tenho%20interesse%20na%20bolsa%20Jade%20Cl%C3%A1ssica" target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Encomendar no WhatsApp</a>
+          </div>
+        </article>
+        <article class="card" data-colecao="Jade">
+          <button type="button" class="card__art" aria-label="Ampliar a arte da bolsa Jade Gold">
+            <img src="assets/cards/jade-gold.jpg" alt="Bolsa Jade Gold — Coleção Jade, arte artesanal com detalhes e preço" loading="lazy" />
+          </button>
+          <div class="card__info">
+            <h4 class="card__nome">Jade Gold</h4>
+            <p class="card__preco">€53 <span>+ portes</span></p>
+            <a class="btn btn--wpp btn--bloco" href="https://wa.me/351912703380?text=Ol%C3%A1!%20Tenho%20interesse%20na%20bolsa%20Jade%20Gold" target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Encomendar no WhatsApp</a>
+          </div>
+        </article>
+        </div>
+      </section>
+      <section class="colecao-bloco" data-colecao="Delicatta">
+        <h3 class="colecao-bloco__titulo">Delicatta</h3>
+        <div class="grid">
+        <article class="card" data-colecao="Delicatta">
+          <button type="button" class="card__art" aria-label="Ampliar a arte da bolsa Delicatta Clássica">
+            <img src="assets/cards/delicatta-classica.jpg" alt="Bolsa Delicatta Clássica — Coleção Delicatta, arte artesanal com detalhes e preço" loading="lazy" />
+          </button>
+          <div class="card__info">
+            <h4 class="card__nome">Delicatta Clássica</h4>
+            <p class="card__preco">€45 <span>+ portes</span></p>
+            <a class="btn btn--wpp btn--bloco" href="https://wa.me/351912703380?text=Ol%C3%A1!%20Tenho%20interesse%20na%20bolsa%20Delicatta%20Cl%C3%A1ssica" target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Encomendar no WhatsApp</a>
+          </div>
+        </article>
+        <article class="card" data-colecao="Delicatta">
+          <button type="button" class="card__art" aria-label="Ampliar a arte da bolsa Delicatta Elegance">
+            <img src="assets/cards/delicatta-elegance.jpg" alt="Bolsa Delicatta Elegance — Coleção Delicatta, arte artesanal com detalhes e preço" loading="lazy" />
+          </button>
+          <div class="card__info">
+            <h4 class="card__nome">Delicatta Elegance</h4>
+            <p class="card__preco">€48 <span>+ portes</span></p>
+            <a class="btn btn--wpp btn--bloco" href="https://wa.me/351912703380?text=Ol%C3%A1!%20Tenho%20interesse%20na%20bolsa%20Delicatta%20Elegance" target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Encomendar no WhatsApp</a>
+          </div>
+        </article>
+        </div>
+      </section>
+      <section class="colecao-bloco" data-colecao="Siena">
+        <h3 class="colecao-bloco__titulo">Siena</h3>
+        <div class="grid">
+        <article class="card" data-colecao="Siena">
+          <button type="button" class="card__art" aria-label="Ampliar a arte da bolsa Siena Terrosa">
+            <img src="assets/cards/siena-terrosa.jpg" alt="Bolsa Siena Terrosa — Coleção Siena, arte artesanal com detalhes e preço" loading="lazy" />
+          </button>
+          <div class="card__info">
+            <h4 class="card__nome">Siena Terrosa</h4>
+            <p class="card__preco">€40 <span>+ portes</span></p>
+            <a class="btn btn--wpp btn--bloco" href="https://wa.me/351912703380?text=Ol%C3%A1!%20Tenho%20interesse%20na%20bolsa%20Siena%20Terrosa" target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Encomendar no WhatsApp</a>
+          </div>
+        </article>
+        </div>
+      </section>
+      <section class="colecao-bloco" data-colecao="Aurora">
+        <h3 class="colecao-bloco__titulo">Aurora</h3>
+        <div class="grid">
+        <article class="card" data-colecao="Aurora">
+          <button type="button" class="card__art" aria-label="Ampliar a arte da bolsa Aurora Off-White">
+            <img src="assets/cards/aurora-off-white.jpg" alt="Bolsa Aurora Off-White — Coleção Aurora, arte artesanal com detalhes e preço" loading="lazy" />
+          </button>
+          <div class="card__info">
+            <h4 class="card__nome">Aurora Off-White</h4>
+            <p class="card__preco">€40 <span>+ portes</span></p>
+            <a class="btn btn--wpp btn--bloco" href="https://wa.me/351912703380?text=Ol%C3%A1!%20Tenho%20interesse%20na%20bolsa%20Aurora%20Off-White" target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Encomendar no WhatsApp</a>
+          </div>
+        </article>
+        <article class="card" data-colecao="Aurora">
+          <button type="button" class="card__art" aria-label="Ampliar a arte da bolsa Aurora Noir">
+            <img src="assets/cards/aurora-noir.jpg" alt="Bolsa Aurora Noir — Coleção Aurora, arte artesanal com detalhes e preço" loading="lazy" />
+          </button>
+          <div class="card__info">
+            <h4 class="card__nome">Aurora Noir</h4>
+            <p class="card__preco">€40 <span>+ portes</span></p>
+            <a class="btn btn--wpp btn--bloco" href="https://wa.me/351912703380?text=Ol%C3%A1!%20Tenho%20interesse%20na%20bolsa%20Aurora%20Noir" target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Encomendar no WhatsApp</a>
+          </div>
+        </article>
+        <article class="card" data-colecao="Aurora">
+          <button type="button" class="card__art" aria-label="Ampliar a arte da bolsa Aurora Bicolor">
+            <img src="assets/cards/aurora-bicolor.jpg" alt="Bolsa Aurora Bicolor — Coleção Aurora, arte artesanal com detalhes e preço" loading="lazy" />
+          </button>
+          <div class="card__info">
+            <h4 class="card__nome">Aurora Bicolor</h4>
+            <p class="card__preco">€40 <span>+ portes</span></p>
+            <a class="btn btn--wpp btn--bloco" href="https://wa.me/351912703380?text=Ol%C3%A1!%20Tenho%20interesse%20na%20bolsa%20Aurora%20Bicolor" target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Encomendar no WhatsApp</a>
+          </div>
+        </article>
+        </div>
+      </section>
+      <section class="colecao-bloco" data-colecao="Eclipse">
+        <h3 class="colecao-bloco__titulo">Eclipse</h3>
+        <div class="grid">
+        <article class="card" data-colecao="Eclipse">
+          <button type="button" class="card__art" aria-label="Ampliar a arte da bolsa Eclipse">
+            <img src="assets/cards/eclipse.jpg" alt="Bolsa Eclipse — Coleção Eclipse, arte artesanal com detalhes e preço" loading="lazy" />
+          </button>
+          <div class="card__info">
+            <h4 class="card__nome">Eclipse</h4>
+            <p class="card__preco">€43 <span>+ portes</span></p>
+            <a class="btn btn--wpp btn--bloco" href="https://wa.me/351912703380?text=Ol%C3%A1!%20Tenho%20interesse%20na%20bolsa%20Eclipse" target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Encomendar no WhatsApp</a>
+          </div>
+        </article>
+        </div>
+      </section>
+      <section class="colecao-bloco" data-colecao="Ravena">
+        <h3 class="colecao-bloco__titulo">Ravena</h3>
+        <div class="grid">
+        <article class="card" data-colecao="Ravena">
+          <button type="button" class="card__art" aria-label="Ampliar a arte da bolsa Ravena Noir">
+            <img src="assets/cards/ravena-noir.jpg" alt="Bolsa Ravena Noir — Coleção Ravena, arte artesanal com detalhes e preço" loading="lazy" />
+          </button>
+          <div class="card__info">
+            <h4 class="card__nome">Ravena Noir</h4>
+            <p class="card__preco">€48 <span>+ portes</span></p>
+            <a class="btn btn--wpp btn--bloco" href="https://wa.me/351912703380?text=Ol%C3%A1!%20Tenho%20interesse%20na%20bolsa%20Ravena%20Noir" target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Encomendar no WhatsApp</a>
+          </div>
+        </article>
+        <article class="card" data-colecao="Ravena">
+          <button type="button" class="card__art" aria-label="Ampliar a arte da bolsa Ravena Brown">
+            <img src="assets/cards/ravena-brown.jpg" alt="Bolsa Ravena Brown — Coleção Ravena, arte artesanal com detalhes e preço" loading="lazy" />
+          </button>
+          <div class="card__info">
+            <h4 class="card__nome">Ravena Brown</h4>
+            <p class="card__preco">€48 <span>+ portes</span></p>
+            <a class="btn btn--wpp btn--bloco" href="https://wa.me/351912703380?text=Ol%C3%A1!%20Tenho%20interesse%20na%20bolsa%20Ravena%20Brown" target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Encomendar no WhatsApp</a>
+          </div>
+        </article>
+        </div>
+      </section>
+      <section class="colecao-bloco" data-colecao="Serena">
+        <h3 class="colecao-bloco__titulo">Serena</h3>
+        <div class="grid">
+        <article class="card" data-colecao="Serena">
+          <button type="button" class="card__art" aria-label="Ampliar a arte da bolsa Serena Bege">
+            <img src="assets/cards/serena-bege.jpg" alt="Bolsa Serena Bege — Coleção Serena, arte artesanal com detalhes e preço" loading="lazy" />
+          </button>
+          <div class="card__info">
+            <h4 class="card__nome">Serena Bege</h4>
+            <p class="card__preco">€38 <span>+ portes</span></p>
+            <a class="btn btn--wpp btn--bloco" href="https://wa.me/351912703380?text=Ol%C3%A1!%20Tenho%20interesse%20na%20bolsa%20Serena%20Bege" target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Encomendar no WhatsApp</a>
+          </div>
+        </article>
+        <article class="card" data-colecao="Serena">
+          <button type="button" class="card__art" aria-label="Ampliar a arte da bolsa Serena Marrom">
+            <img src="assets/cards/serena-marrom.jpg" alt="Bolsa Serena Marrom — Coleção Serena, arte artesanal com detalhes e preço" loading="lazy" />
+          </button>
+          <div class="card__info">
+            <h4 class="card__nome">Serena Marrom</h4>
+            <p class="card__preco">€38 <span>+ portes</span></p>
+            <a class="btn btn--wpp btn--bloco" href="https://wa.me/351912703380?text=Ol%C3%A1!%20Tenho%20interesse%20na%20bolsa%20Serena%20Marrom" target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Encomendar no WhatsApp</a>
+          </div>
+        </article>
+        <article class="card" data-colecao="Serena">
+          <button type="button" class="card__art" aria-label="Ampliar a arte da bolsa Serena Cinza">
+            <img src="assets/cards/serena-cinza.jpg" alt="Bolsa Serena Cinza — Coleção Serena, arte artesanal com detalhes e preço" loading="lazy" />
+          </button>
+          <div class="card__info">
+            <h4 class="card__nome">Serena Cinza</h4>
+            <p class="card__preco">€38 <span>+ portes</span></p>
+            <a class="btn btn--wpp btn--bloco" href="https://wa.me/351912703380?text=Ol%C3%A1!%20Tenho%20interesse%20na%20bolsa%20Serena%20Cinza" target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Encomendar no WhatsApp</a>
+          </div>
+        </article>
+        <article class="card" data-colecao="Serena">
+          <button type="button" class="card__art" aria-label="Ampliar a arte da bolsa Serena Lilás">
+            <img src="assets/cards/serena-lilas.jpg" alt="Bolsa Serena Lilás — Coleção Serena, arte artesanal com detalhes e preço" loading="lazy" />
+          </button>
+          <div class="card__info">
+            <h4 class="card__nome">Serena Lilás</h4>
+            <p class="card__preco">€38 <span>+ portes</span></p>
+            <a class="btn btn--wpp btn--bloco" href="https://wa.me/351912703380?text=Ol%C3%A1!%20Tenho%20interesse%20na%20bolsa%20Serena%20Lil%C3%A1s" target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Encomendar no WhatsApp</a>
+          </div>
+        </article>
+        </div>
+      </section>
+      <section class="colecao-bloco" data-colecao="Melina">
+        <h3 class="colecao-bloco__titulo">Melina</h3>
+        <div class="grid">
+        <article class="card" data-colecao="Melina">
+          <button type="button" class="card__art" aria-label="Ampliar a arte da bolsa Melina">
+            <img src="assets/cards/melina.jpg" alt="Bolsa Melina — Coleção Melina, arte artesanal com detalhes e preço" loading="lazy" />
+          </button>
+          <div class="card__info">
+            <h4 class="card__nome">Melina</h4>
+            <p class="card__preco">€35 <span>+ portes</span></p>
+            <a class="btn btn--wpp btn--bloco" href="https://wa.me/351912703380?text=Ol%C3%A1!%20Tenho%20interesse%20na%20bolsa%20Melina" target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Encomendar no WhatsApp</a>
+          </div>
+        </article>
+        </div>
+      </section>
+      <section class="colecao-bloco" data-colecao="Valentina">
+        <h3 class="colecao-bloco__titulo">Valentina</h3>
+        <div class="grid">
+        <article class="card" data-colecao="Valentina">
+          <button type="button" class="card__art" aria-label="Ampliar a arte da bolsa Valentina Rosé">
+            <img src="assets/cards/valentina-rose.jpg" alt="Bolsa Valentina Rosé — Coleção Valentina, arte artesanal com detalhes e preço" loading="lazy" />
+          </button>
+          <div class="card__info">
+            <h4 class="card__nome">Valentina Rosé</h4>
+            <p class="card__preco">€45 <span>+ portes</span></p>
+            <a class="btn btn--wpp btn--bloco" href="https://wa.me/351912703380?text=Ol%C3%A1!%20Tenho%20interesse%20na%20bolsa%20Valentina%20Ros%C3%A9" target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Encomendar no WhatsApp</a>
+          </div>
+        </article>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- ===== SOBRE A FLORAR ===== -->
+  <section class="sobre" id="sobre">
+    <div class="container">
+      <span class="eyebrow">A nossa essência</span>
+      <h2 class="section-titulo section-titulo--orn">Sobre a Florar</h2>
+      <div class="sobre__grid">
+        <article class="sobre__bloco">
+          <h3 class="sobre__titulo">Nossa História</h3>
+          <p>A Florar nasceu do amor pelo artesanal, da valorização dos detalhes e da beleza encontrada nas peças feitas à mão. Cada criação é desenvolvida cuidadosamente, unindo design, funcionalidade e acabamento de qualidade, transformando fios em peças únicas. Mais do que bolsas, a Florar cria acessórios que carregam personalidade, exclusividade e a delicadeza do trabalho artesanal. Onde cada fio floresce em uma nova história.</p>
+        </article>
+        <article class="sobre__bloco">
+          <h3 class="sobre__titulo">Processo Artesanal</h3>
+          <p>Cada peça é produzida manualmente, ponto a ponto, respeitando o tempo necessário para garantir qualidade, acabamento e exclusividade. Nenhuma bolsa é produzida em larga escala. Cada criação recebe atenção aos detalhes e é desenvolvida com dedicação, carinho e cuidado. O trabalho artesanal permite que cada peça tenha identidade própria, tornando cada criação única e especial.</p>
+        </article>
+      </div>
+      <article class="sobre__bloco sobre__video-bloco">
+        <h3 class="sobre__titulo">Produção Manual</h3>
+        <div class="sobre__video sobre__video--vertical">
+          <video class="sobre__video-el" controls autoplay muted loop playsinline preload="auto">
+            <source src="assets/video/video-florar.mp4" type="video/mp4" />
+            O seu navegador não suporta vídeo. <a href="assets/video/video-florar.mp4">Ver o vídeo do processo artesanal</a>.
+          </video>
+        </div>
+        <p class="sobre__legenda">Veja o processo artesanal por trás de cada peça Florar.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== PERSONALIZAÇÃO ===== -->
+  <section class="personalizacao" id="personalizacao">
+    <div class="container personalizacao__inner">
+      <div class="personalizacao__medalha"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="7.5" cy="9" r="2.3"/><circle cx="14.5" cy="6.8" r="2.3"/><circle cx="17.2" cy="13.5" r="2.3"/><circle cx="9.5" cy="15.5" r="2.3"/></svg></div>
+      <span class="eyebrow">Sob medida</span>
+      <h2>Gostou de um modelo, mas quer do seu jeito?</h2>
+      <p>Todas as bolsas são personalizáveis — as suas cores, acessórios, alças e detalhes. Cada peça é única, feita especialmente para si.</p>
+      <a href="https://wa.me/351912703380?text=Ol%C3%A1%21%20Gostaria%20de%20personalizar%20uma%20bolsa." class="btn btn--claro btn--lg" target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Personalizar a minha bolsa</a>
+    </div>
+  </section>
+
+  <!-- ===== CALCULADORA — PrecificaCrochê (público: artesãs) ===== -->
+  <section class="calc" id="precificacroche" aria-label="PrecificaCrochê — calculadora para artesãs">
+    <div class="container calc__inner">
+      <div class="calc__texto">
+        <span class="eyebrow">Ferramenta para artesãs</span>
+        <h2 class="calc__titulo">Quanto vale, de verdade, o <b>seu trabalho</b>?</h2>
+        <p class="calc__lead">O <strong>PrecificaCrochê</strong> calcula materiais, linha, mão de obra e lucro — e mostra o preço certo de venda da sua peça, em euros ou reais. Chega de cobrar a menos pelo seu artesanato.</p>
+        <div class="calc__ctas">
+          <a class="btn btn--wpp btn--lg" href="https://wa.me/351912703380?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20PrecificaCroch%C3%AA%2C%20a%20calculadora%20de%20pre%C3%A7os%20para%20artes%C3%A3s." target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg> Quero usar o PrecificaCrochê</a>
+          <a class="calc__link" href="https://florarcroches.github.io/precificacroche/" target="_blank" rel="noopener">Ver a ferramenta <span aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+      <div class="calc__preview" aria-hidden="true">
+        <div class="calc__preview-head"><span class="dot"></span>PrecificaCrochê</div>
+        <ul class="calc__rows">
+          <li><span>Materiais</span><b>€ 7,00</b></li>
+          <li><span>Linha / fio</span><b>€ 5,00</b></li>
+          <li><span>Mão de obra</span><b>€ 18,00</b></li>
+          <li><span>Margem de lucro</span><b>40%</b></li>
+        </ul>
+        <div class="calc__result"><span>Preço sugerido</span><strong>€ 42,00</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" id="contato">
+    <div class="container footer__inner">
+      <img src="assets/logo/florar-logo-oficial.jpg" alt="Florar Crochés" class="footer__logo" />
+      <div class="footer__contato">
+        <a href="https://www.instagram.com/florarcroches" target="_blank" rel="noopener">@florarcroches</a>
+        <a href="tel:+351912703380">+351 912 703 380</a>
+        <a href="https://wa.me/351912703380" target="_blank" rel="noopener" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});">Falar no WhatsApp</a>
+        <a href="mailto:florarcrocheeliane@gmail.com">florarcrocheeliane@gmail.com</a>
+      </div>
+      <p class="footer__artesa">É artesã de crochê? <a href="https://florarcroches.github.io/precificacroche/" target="_blank" rel="noopener">Conheça o PrecificaCrochê &rarr;</a></p>
+    </div>
+    <p class="footer__copy">Florar Crochés — bolsas únicas, feitas à mão. Braga, Portugal.</p>
+  </footer>
+
+  <a href="https://wa.me/351912703380" class="wpp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp" onclick="gtag('event','conversion',{'send_to':'AW-SEU_ID_AQUI/SEU_LABEL_AQUI'});"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.125.558 4.122 1.533 5.854L.057 23.215a.75.75 0 0 0 .923.923l5.361-1.476A11.953 11.953 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.693-.508-5.234-1.396l-.374-.215-3.883 1.069 1.069-3.883-.215-.374A9.953 9.953 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg></a>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Arte da bolsa ampliada">
+    <button class="lightbox__fechar" aria-label="Fechar">&times;</button>
+    <img id="lightbox-img" src="" alt="" />
+  </div>
+
+  <script src="script.js"></script>
+  <script type="module" src="animations.js"></script>
+</body>
+</html>
